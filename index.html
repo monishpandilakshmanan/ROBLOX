@@ -1,74 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#111318" />
-  <title>GAMEHUB — Sign in</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#" aria-label="GAMEHUB home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" role="img">
-          <path d="M13 13h22c5 0 8 4 9 9l2 10c1 5-4 8-8 5l-7-5H17l-7 5c-4 3-9 0-8-5l2-10c1-5 4-9 9-9Z" />
-          <path class="cutout" d="M13 21h10v4H13zM16 18h4v10h-4z" />
-          <circle class="cutout" cx="33" cy="22" r="2.5"/><circle class="cutout" cx="38" cy="27" r="2.5"/>
-        </svg>
-      </span>
-      <span>GAMEHUB</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#discover">Discover</a>
-      <a href="#community">Community</a>
-      <a href="#create">Create</a>
-    </nav>
-    <a class="signup-top" href="#account" id="topSignup">Sign Up</a>
-  </header>
-
-  <main class="stage">
-    <div class="game-wall" aria-hidden="true">
-      <div class="game-tile tile-one"><span>NEON<br>RUNNER</span><b>⚡</b></div>
-      <div class="game-tile tile-two"><span>STAR<br>QUEST</span><b>✦</b></div>
-      <div class="game-tile tile-three"><span>PIXEL<br>WORLD</span><b>◈</b></div>
-      <div class="game-tile tile-four"><span>DRIFT<br>ZONE</span><b>🏎</b></div>
-      <div class="game-tile tile-five"><span>MONSTER<br>MAZE</span><b>👾</b></div>
-      <div class="game-tile tile-six"><span>SKY<br>ISLANDS</span><b>☁</b></div>
-      <div class="game-tile tile-seven"><span>CYBER<br>ARENA</span><b>✧</b></div>
-      <div class="game-tile tile-eight"><span>BLOCK<br>BUILDER</span><b>▦</b></div>
-    </div>
-    <div class="shade"></div>
-
-    <section class="login-card" id="account" aria-labelledby="formTitle">
-      <div class="card-logo" aria-hidden="true">
-        <svg viewBox="0 0 48 48">
-          <path d="M13 13h22c5 0 8 4 9 9l2 10c1 5-4 8-8 5l-7-5H17l-7 5c-4 3-9 0-8-5l2-10c1-5 4-9 9-9Z" />
-          <path class="cutout" d="M13 21h10v4H13zM16 18h4v10h-4z" />
-          <circle class="cutout" cx="33" cy="22" r="2.5"/><circle class="cutout" cx="38" cy="27" r="2.5"/>
-        </svg>
-      </div>
-      <h1 id="formTitle">Welcome to GAMEHUB</h1>
-      <p class="subtitle" id="formSubtitle">Your next adventure starts here.</p>
-
-      <form id="loginForm">
-        <label class="sr-only" for="identity">Username or email</label>
-        <input id="identity" name="identity" type="text" placeholder="Username / Email" autocomplete="username" required />
-        <label class="sr-only" for="password">Password</label>
-        <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required minlength="4" />
-        <button class="primary-btn" type="submit" id="submitButton">Log In</button>
-      </form>
-
-      <p class="message" id="message" role="status" aria-live="polite"></p>
-      <button class="text-btn" id="forgotButton" type="button">Forgot Password or Username?</button>
-      <div class="separator"><span></span><small>OR</small><span></span></div>
-      <button class="secondary-btn" id="codeButton" type="button">Email Me a One-Time Code</button>
-      <button class="secondary-btn" id="quickButton" type="button">Quick Sign-in</button>
-      <p class="switch-line"><span id="switchPrompt">Don't have an account?</span> <button class="inline-btn" id="switchMode" type="button">Sign Up</button></p>
-      <p class="fine-print">Demo interface only. No passwords are transmitted or saved.</p>
-    </section>
-  </main>
-  <footer id="community"><span>© 2026 GAMEHUB</span><span>Play. Create. Connect.</span><a id="helpLink" href="#help">Help &amp; Support</a></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GAMEHUB // Arcade Portal</title><link rel="stylesheet" href="styles.css"></head><body>
+<canvas id="matrix" aria-hidden="true"></canvas><div id="transition" class="transition" aria-hidden="true"><div class="transition-mark">GAMEHUB<span>://</span>ADMIN</div><div class="transition-bar"><i></i></div><p>ESTABLISHING SECURE SESSION</p></div>
+<main id="loginView" class="view active"><div class="login-shell"><div class="brand-row"><div class="brand-mark">GH<span>✦</span></div><div><div class="eyebrow">PLAYER PORTAL / 01</div><h1>GAME<span>HUB</span></h1></div></div><p class="tagline">Login and get free Roblox rewards <span class="demo-tag">DEMO</span></p>
+<form id="loginForm" autocomplete="off"><label for="username">PLAYER USERNAME</label><input id="username" name="username" placeholder="Enter a display name" required maxlength="32"><label for="password">DEMO PASSWORD</label><input id="password" name="password" type="password" placeholder="Any demo password" required><p class="privacy-note">Demo only: your password is immediately discarded and is never saved or sent anywhere.</p><button class="primary-btn" type="submit">ENTER ARCADE <span>↗</span></button></form><div class="login-footer"><span><i class="live-dot"></i> ARCADE SYSTEM ONLINE</span><span>v2.6.01</span></div></div><button id="adminTrigger" class="admin-trigger" aria-label="Open administrator access">A̸D̷M̶I̵N̸</button></main>
+<main id="gamesView" class="view"><header class="topbar"><button id="logout" class="logout">← LOG OUT</button><div class="brand-mini">GAME<span>HUB</span></div><div class="player-pill"><span class="live-dot"></span><span id="playerName">PLAYER</span></div></header><section class="games-wrap"><div class="eyebrow">YOUR ARCADE / 02</div><h2>Choose your <span>mission.</span></h2><p class="muted">Pick a game card to view its demo task and progress.</p><div id="gamesGrid" class="games-grid"></div></section></main>
+<main id="adminGate" class="view admin-view"><div class="gate-panel"><div class="gate-top"><span class="live-dot"></span> SECURE NODE // AUTH REQUIRED <button id="backFromGate">CLOSE ×</button></div><div class="shield">⌁</div><div class="eyebrow">RESTRICTED TERMINAL</div><h2>ADMIN<span> ACCESS</span></h2><p class="muted">Identity verification required to continue.</p><form id="adminForm"><label for="passcode">ROOT PASSCODE</label><div class="pass-wrap"><input id="passcode" type="password" placeholder="Enter authorization key" required autocomplete="off"><span>▰</span></div><button class="primary-btn" type="submit">VERIFY IDENTITY ↗</button></form><p id="gateMessage" class="gate-message" aria-live="polite">WAITING FOR AUTHORIZATION...</p><div class="gate-bottom">ENCRYPTION SIMULATION <span>● ACTIVE</span></div></div></main>
+<main id="adminDashboard" class="view admin-view"><header class="topbar admin-top"><button id="adminLogout" class="logout">← EXIT ADMIN</button><div class="brand-mini">ROOT<span>://</span>CONSOLE</div><div class="player-pill"><span class="live-dot"></span>AUTHORIZED</div></header><section class="dashboard"><div class="eyebrow">SYSTEM CONTROL / 03</div><h2>Welcome, <span>Mr. Monish.</span></h2><p class="muted">Admin session is active. This demo stores display names only—not passwords.</p><div class="stat-row"><div class="stat"><small>DEMO SESSIONS</small><strong id="sessionCount">0</strong></div><div class="stat"><small>STORAGE</small><strong>LOCAL</strong></div><div class="stat"><small>SECURITY</small><strong class="green">PASSWORDS OFF</strong></div></div><div class="table-panel"><div class="table-title">PLAYER SESSION LOG <span>LOCAL DEMO RECORDS</span></div><div class="table-scroll"><table><thead><tr><th>TIME</th><th>DISPLAY NAME</th><th>RECORD TYPE</th></tr></thead><tbody id="sessionTable"></tbody></table></div><button id="clearLogs" class="clear-btn">CLEAR DEMO LOGS</button></div><p class="privacy-note">For real accounts, use Roblox's official sign-in flow. Never ask users to share their Roblox password for rewards.</p></section></main>
+<div id="taskModal" class="modal"><div class="modal-card"><button id="closeModal" class="modal-close">×</button><img id="taskImage" alt=""><div class="eyebrow">MISSION DETAILS</div><h2 id="taskTitle"></h2><p id="taskDesc" class="muted"></p><div class="progress-head"><span>DEMO PROGRESS</span><strong id="progressLabel">0%</strong></div><div class="progress-track"><i id="progressBar"></i></div><p class="privacy-note">Progress increases by 2% every 5 minutes while this demo mission is open. It is only a visual simulation.</p><button id="startTask" class="primary-btn">START MISSION</button></div></div><script src="script.js"></script></body></html>
